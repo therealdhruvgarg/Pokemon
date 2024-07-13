@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Pokémon React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that displays a list of Pokémon using data from the [PokéAPI](https://pokeapi.co/). Users can search for Pokémon by name and click on a Pokémon to view more details.
 
-## Available Scripts
+## Live Project
 
-In the project directory, you can run:
+You can view the live project [here](https://pokemon-five-hazel.vercel.app/).
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Display a list of Pokémon with images.
+- Search functionality to filter Pokémon by name.
+- Click on a Pokémon to view more details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React
+- React Router
+- Bootstrap
+- PokéAPI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To run this project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   git clone https://github.com/your-username/pokemon-react-app.git
+   cd pokemon-react-app
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
 
-### `npm run eject`
+   ```sh
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Run the application:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```sh
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   The app should now be running on `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deployment
 
-## Learn More
+This project is deployed using [Vercel](https://vercel.com/). To deploy your own instance of this project:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Install Vercel CLI (optional):**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   npm install -g vercel
+   ```
 
-### Code Splitting
+2. **Build the project:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```sh
+   npm run build
+   ```
 
-### Analyzing the Bundle Size
+3. **Deploy using Vercel:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```sh
+   vercel
+   ```
 
-### Making a Progressive Web App
+   Follow the prompts to deploy your application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Structure
 
-### Advanced Configuration
+```plaintext
+src/
+├── components/
+│   ├── PokemonList.js
+│   ├── PokemonDetail.js
+├── services/
+│   ├── product-operations.js
+│   ├── api-client.js
+│   ├── model.js
+├── App.js
+├── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `components/`: Contains the React components for the Pokémon list and detail pages.
+- `services/`: Contains the logic for fetching data from the PokéAPI and managing the Pokémon data.
+- `App.js`: The main application component that sets up routing.
+- `index.js`: The entry point for the React application.
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you would like to contribute to this project, please fork the repository and create a pull request. Contributions are welcome!
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [PokéAPI](https://pokeapi.co/): The API used to fetch Pokémon data.
+- [Bootstrap](https://getbootstrap.com/): For providing the styling framework.
+
+---
